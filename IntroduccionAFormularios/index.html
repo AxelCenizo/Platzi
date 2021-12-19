@@ -23,7 +23,22 @@
         <br>
         <label for="pais">
             <span>Pais</span>
-            <input type="text" id="pais" placeholder="country" name="pais" required autocomplete="country">
+            <input list="pais" placeholder="country" name="pais" required autocomplete="country">
+            <datalist id="pais">
+                <option value="Argentina"></option>
+                <option value="Colombia"></option>
+                <option value="Nueva Zelanda"></option>
+            </datalist>
+        </label>
+        <br>
+        <br>
+        <label for="estado-pais">
+            <span>Vives y/o naciste en el pais seleccionado?</span>
+            <select name="estado-pais" id="estado-pais">
+                <option value="vivir">Vivo en el país seleccionado pero no nací en él</option>
+                <option value="nacer">Nací en el país seleccionado pero no vivo en él</option>
+                <option value="ambas">Vivo en el país seleccionado y también nací en él</option>
+            </select>
         </label>
         <br>
         <br>
