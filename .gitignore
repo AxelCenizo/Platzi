@@ -1,0 +1,12 @@
+# RetoListaDeCompra/images
+# *.png
+# *.Identifier
+# *.jpg
+# *.mp4
+# *.gif
+
+*.*
+!*.gitignore
+!*.html
+!*.css
+!*.js
