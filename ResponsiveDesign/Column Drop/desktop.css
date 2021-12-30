@@ -1,0 +1,15 @@
+.c1, .c2, .c3, .c4 {
+    height: calc(100vh/4 - 1rem - 3rem/2); 
+}
+.c1 {
+    width: calc(20vw - 6rem/3); 
+}
+.c2 {
+    width: calc(30vw - 6rem/3); 
+}    
+.c3 {
+    width: calc(50vw - 6rem/3); 
+}    
+.c4 {
+    height: calc(75vh - 1rem - 3rem/2); 
+}
