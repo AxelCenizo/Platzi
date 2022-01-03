@@ -1,0 +1,20 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+main {
+    width: 100vw;
+}
+picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img {
+    width: 100%;
+    max-width: 900px;
+}

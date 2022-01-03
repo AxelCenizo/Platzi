@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <picture>
+            <source srcset="images/large.jpg" media="(min-width: 850px)">
+            <source srcset="images/medium.jpg" media="(min-width: 420px)">
+            <img src="images/small.jpg" alt="Es una imagen para probar responsive imgs">
+        </picture>
+    </main>
+</body>
+</html>

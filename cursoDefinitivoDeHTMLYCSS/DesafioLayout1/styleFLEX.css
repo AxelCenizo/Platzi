@@ -1,0 +1,127 @@
+:root {
+    --woocommerce: #a46497;
+    --wc-green: #7ad03a;
+    --wc-red: #a00;
+    --wc-orange: #ffba00;
+    --wc-blue: #2ea2cc;
+    --wc-primary: #a46497;
+    --wc-primary-text: white;
+    --wc-secondary: #ebe9eb;
+    --wc-secondary-text: #515151;
+    --wc-highlight: #77a464;
+    --wc-highligh-text: white;
+    --wc-content-bg: #fff;
+    --wc-subtext: #767676;
+    --header-color: #D28B8B;
+    --img: https://secureservercdn.net/192.169.220.85/f0p.b9e.myftpupload.com/wp-content/uploads/2021/09/Asset-2.png;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+header, footer {
+    font-weight: bold;
+    font-size: 14px;
+    height: 10vh;
+    width: 100vw;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5vw;
+    background-color: var(--header-color);
+    /* background-color: #F9C7C7; */
+}
+header{
+    /* border-bottom: solid 2px var(--header-color); */
+}
+li svg {
+    position: relative;
+    top: 2px;
+    left: 2px;
+}
+header svg {
+    height: 14px;
+}
+li {
+    list-style: none;
+    display: inline-block;
+}
+li, span {
+    margin: 0 0.5vw;
+}
+img {
+    height: 175%;
+}
+
+aside {
+    min-width: 20vw;
+    height: 80vh;
+    background-color: #F9C7C7;
+    /* border-right: solid 2px var(--header-color);   */
+    color: white;
+    padding-top: 10px;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 18px;
+    text-align: center;
+}
+
+p {
+    align-items: column;
+}
+
+aside .contenedor-aside-svg {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+}
+
+aside svg {
+    height: 30px;
+    position: relative;
+    top: 5px;
+}
+.texto-principal {
+    font-size: 16px;
+}
+.texto-secundario {
+    font-size: 11px;
+}
+.contenedor-aside-svg {
+    display: flex;
+    padding-top: 15px;
+}
+main {
+    display: flex;
+}
+section h1{
+    color: #D28B8B;
+    margin-bottom: 5vh;
+    border-bottom: solid 20px #F9C7C7;
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+}
+section p {
+    color: var(--wc-subtext);
+    margin: 30px 250px;
+    text-align: justify;
+}
+section {
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 30px;
+}
+footer {
+    /* border-top: var(--header-color) 2px solid; */
+    background-color: var(--header-color);
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+
