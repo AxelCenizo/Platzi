@@ -3,52 +3,83 @@
     margin: 0;
     box-sizing: border-box;
 }
+html {
+    font-size: 62.5%;
+}
 main {
     background-color: #8484B3;
     width: 100vw;
     height: 100vh;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding: 5vh 16vw;
+    padding: calc(100vh/2 - 400px - 4rem) calc(100vw/2 - (400px*5/7)*2 - 4rem*4);
+    max-height: fit-content;
+    overflow-y: auto;
+    min-width: calc(400px*5/7 + 4rem);
 }
 figure {
-    border-radius: 7.5px;
-    overflow: hidden;
-    height: 300px;
-    width: calc(300px*5/7);
+    border-radius: 5px;
+    /* overflow: hidden; */
+    height: 400px;
+    width: calc(400px*5/7);
     background-color: rgb(255, 255, 255);
-    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+    margin: 2rem;
 }
 figure div:first-child {
-    height: calc(300px/7*2);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: calc(400px/7*2);
     width: 100%;
+    display: flex;
+    justify-content: right;
 }
-figure .banner-one {
+figure .banner-one, figure .banner-one button {
     background-color: #73FFD6;    
 }
-figure .banner-two {
+figure .banner-two, figure .banner-two button {
     background-color: #9FC1FF;    
 }
-figure .banner-three {
+figure .banner-three, figure .banner-three button {
     background-color: #e9e8ac;    
 }
-figure .banner-four {
+figure .banner-four, figure .banner-four button {
     background-color: #9affee;    
 }
-figure .banner-five {
+figure .banner-five, figure .banner-five button {
     background-color: #a4d2e7;    
 }
-figure .banner-six {
+figure .banner-six, figure .banner-six button {
     background-color: #FFC6E3;    
 }
-figure .banner-seven {
+figure .banner-seven, figure .banner-seven button {
     background-color: #ffccae;    
 }
-figure .banner-eight {
+figure .banner-eight, figure .banner-eight button {
     background-color: #FF97A3;    
 }
+button {
+    border: none;
+    box-shadow: 0px 0px 10px 0.5px rgba(0, 0, 0, 0.25);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: relative;
+    right: -10px;
+    top: -10px;
+    font-size: 3rem;
+    color: white;
+}
+/* .platzi-logo {
+    width: 45px;
+    background-color: #121f3d;
+    margin: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0.5px rgba(0, 0, 0, 0.25);
+} */
 .image-container {
     height: 100px;
     width: 100px;
@@ -56,15 +87,89 @@ figure .banner-eight {
     position: relative;
     top: -50px;
     left: calc(50% - 50px);
-    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 5px 0.5px rgba(0, 0, 0, 0.25);
     border-radius: 50%;
     border: 5px solid white;
 }
-img {
+.image-container img {
     width: 100%;
     position: relative;
 }
-.image-container img {
+#image-one img {
+    transform: scale(125%);
+    top: 0px;    
+}
+#image-two img {
+    transform: scale(160%);
+    top: 10px;
+    left: 6px;    
+}
+#image-three img {
+    transform: scale(160%);
+    top: 24px;
+    left: 3px;    
+}
+#image-four img {
+    transform: scale(275%);
+    top: 90px;
+    left: 20px;    
+}
+#image-five img {
+    transform: scale(140%);
+    top: 0px;    
+}
+#image-six img {
+    transform: scale(150%);
+    top: -25px;
+    left: 7px;    
+}
+#image-seven img {
+    transform: scale(310%);
+    top: 70px;
+    left: 3px;    
+}
+#image-eigth img {
     transform: scale(150%);
     top: 10px;    
 }
+figcaption {
+    height: calc(400px/7*5);
+    position: relative;
+    top: -50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+figcaption h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    margin: 10px 0;
+    color: #444;
+}
+figcaption p {
+    font-family: 'Open Sans', sans-serif;
+    color: #aaa;
+    margin: 20px 20px;
+    height: 10rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+figcaption div{
+
+}
+svg {
+    height: 2rem;
+    width: 2rem;
+    margin: 0 10px;
+}
+a {
+    color: #999;
+    text-decoration: none;
+}
+
+/* @media (min-width: 1360px) {
+    main {
+        padding: 5vh calc(100vw/2 - 1200px*5/7 - 4rem*4);
+    }
+} */
