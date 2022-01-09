@@ -5,6 +5,12 @@
     align-content: center;
     justify-content: center;
 }
+.title {
+    font-size: var(--lg);
+    font-weight: 700;
+    text-align: start;
+    margin-bottom: 4rem;
+}
 .form-container {
     width: 32.4rem;
     display: flex;
@@ -27,24 +33,12 @@
     font-weight: 700;
     margin-bottom: 0.8rem;
 }
-.input {
-    border: none;
-    background-color: var(--text-input-field);
-    border-radius: 0.8rem;
-    font-size: var(--sm);
+.value {
+    background-color: var(--white);
+    font-size: var(--md);
     height: 4.2rem;
-    padding-left: 0.8rem;
     margin-bottom: 2.2rem;
-}
-.primary-button {
-    height: 5.6rem;
-    border: none;
-    background-color: var(--hospital-green);
-    border-radius: 0.8rem;
-    font-size: var(--lg);
-    font-weight: 500;
-    color: var(--white);
-    cursor: pointer; 
+    color: var(--very-light-pink);
 }
 .secondary-button {
     width: inherit;
@@ -57,24 +51,14 @@
     font-weight: 500;
     cursor: pointer; 
 }
-.password-recovery {
-    font-size: var(--sm);
-    text-decoration: none;
-    color: var(--hospital-green);
-    text-align: center;
-    margin: 3.2rem 0 6rem 0;
-}
 .login-button {
-    margin-top: 1.8rem;
+    margin-top: 1.2rem;
 }
 
 @media (max-width: 720px) {
-    .logo {
-        display: block;
-    }
-    .sign-up-button {
-        position: absolute;
-        bottom: 0;
-        margin-bottom: 1.6rem;
+    .form-container {        
+        justify-content: space-between;
+        height: 100%;
+        padding: 4rem 0 2rem;
     }
 }

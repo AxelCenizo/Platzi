@@ -1,0 +1,33 @@
+.mobile-menu {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 4rem;
+}
+h1 {
+    font-size: var(--lg);
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: var(--md);
+    font-weight: bold;
+}
+ul li {
+    margin: 2.4rem 0;
+}
+.orders-account {
+    border-top: 1px solid var(--very-light-pink);
+}
+.email {
+    font-size: var(--sm);
+    font-weight: lighter;
+}
+.current-account li {
+    margin: 0.8rem 0;
+}
+.sign-out a, .sign-out{
+    font-size: var(--sm);
+    color: var(--hospital-green);
+}

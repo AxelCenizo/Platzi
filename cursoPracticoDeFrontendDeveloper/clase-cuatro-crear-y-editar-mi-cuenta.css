@@ -5,6 +5,12 @@
     align-content: center;
     justify-content: center;
 }
+.title {
+    font-size: var(--lg);
+    font-weight: 700;
+    text-align: start;
+    margin-bottom: 4rem;
+}
 .form-container {
     width: 32.4rem;
     display: flex;
@@ -46,35 +52,14 @@
     color: var(--white);
     cursor: pointer; 
 }
-.secondary-button {
-    width: inherit;
-    height: 5.6rem;
-    border: 1px solid var(--hospital-green);
-    background-color: var(--white);
-    color: var(--hospital-green);
-    border-radius: 0.8rem;
-    font-size: var(--lg);
-    font-weight: 500;
-    cursor: pointer; 
-}
-.password-recovery {
-    font-size: var(--sm);
-    text-decoration: none;
-    color: var(--hospital-green);
-    text-align: center;
-    margin: 3.2rem 0 6rem 0;
-}
 .login-button {
-    margin-top: 1.8rem;
+    margin-top: 1.2rem;
 }
 
 @media (max-width: 720px) {
-    .logo {
-        display: block;
-    }
-    .sign-up-button {
-        position: absolute;
-        bottom: 0;
-        margin-bottom: 1.6rem;
+    .form-container {        
+        justify-content: space-between;
+        height: 100%;
+        padding: 4rem 0 2rem;
     }
 }

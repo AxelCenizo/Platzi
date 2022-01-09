@@ -22,3 +22,6 @@ body, input {
     font-family: 'Roboto', sans-serif;  
     font-family: 'Quicksand', sans-serif;
 }
+ul {
+    list-style: none;
+}
