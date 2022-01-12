@@ -1,0 +1,74 @@
+.title {
+    font-size: var(--lg);
+    font-weight: bold;
+    margin-bottom: 4rem;
+}
+.main-container {
+    height: 100vh;
+    width: 100%;
+    padding: 18rem calc(50vw - 24rem);
+    display: flex;
+    flex-direction: column;
+}
+.my-orders .order {
+    height: 6.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.8rem;
+    /* background-color: var(--text-input-field); */
+}
+.information {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.date, .price {
+    font-size: var(--md);
+    font-weight: bold;
+    margin-bottom: 0.4rem;
+}
+.quantity, .product-name {
+    font-size: var(--sm);
+    font-weight: lighter;
+}
+.order-price-container {
+    display: flex;
+}
+article .price {
+    margin-right: 2rem;
+}
+.my-orders {
+    width: 100%;
+    padding-right: 2.4rem;
+    overflow-y: hidden;
+}
+.my-orders:hover {
+    overflow: auto;
+    padding-right: calc(2.4rem - 1.5rem);
+}
+.article-information {
+    padding: 0 0 0 2.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 6.4rem);
+}
+article:first-child {
+    margin-top: 0;
+}
+article {
+    display: flex;
+    margin-top: 0.8rem;
+    height: 6.4rem;
+    width: 100%;
+}
+article figure img {
+    height: 6.4rem;
+    width: 6.4rem;
+    object-fit: cover;
+    border-radius: 2.4rem;
+}
+figure {
+    display: inline-block;
+}
