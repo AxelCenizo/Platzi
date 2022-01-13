@@ -1,0 +1,119 @@
+.title {
+    font-size: var(--lg);
+    font-weight: bold;
+    display: none;
+}
+.main-container {
+    height: 100vh;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.total {
+    margin: 2rem 0;
+    height: 6.4rem;
+    padding: 3.6rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.8rem;
+    background-color: var(--text-input-field);
+}
+.information {
+    display: flex;
+    flex-direction: column;
+}
+.total-title, .price {
+    font-size: var(--md);
+    font-weight: bold;
+}
+.quantity, .product-name {
+    font-size: var(--sm);
+    font-weight: lighter;
+}
+.my-order {
+    width: 100%;
+    padding-right: 2.4rem;
+    overflow-y: hidden;
+}
+.my-order:hover {
+    overflow: auto;
+    padding-right: calc(2.4rem - 1.5rem);
+}
+.article-information {
+    padding: 0 0 0 2.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 6.4rem);
+}
+article:first-child {
+    margin-top: 0;
+}
+article {
+    display: flex;
+    margin-top: 2.4rem;
+    height: 6.4rem;
+    width: 100%;
+}
+article figure img {
+    height: 6.4rem;
+    width: 6.4rem;
+    object-fit: cover;
+    border-radius: 2.4rem;
+}
+figure {
+    display: inline-block;
+}
+.close {
+    margin-left: 1.6rem;
+}
+.price-container {
+    display: flex;
+    align-items: center;
+}
+.checkout {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 0.8rem;
+    background-color: var(--hospital-green);
+    padding: 1.6rem;
+    color: white;
+    font-size: var(--md);
+    font-weight: 700;
+    font-family: 'Quicksand', sans-serif;
+}
+.checkout:hover {
+    cursor: pointer;;
+}
+main {
+    display: none;
+}
+
+@media (min-width: 600px) {
+    .main-container {
+        width: 400px;
+    }
+    main {
+        display: initial;
+        height: 100vh;
+        width: calc(100vw - 400px);
+    }
+    body {
+        display: flex;
+    }
+    .title + article {
+        margin-top: 4rem;
+    }
+    .title {
+        display: initial;
+    }
+    aside {
+        box-shadow: rgba(0, 0, 0, 0.103) 0 0 5px 5px;
+    }
+}

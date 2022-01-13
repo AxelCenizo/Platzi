@@ -1,0 +1,97 @@
+aside {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+aside .product img:not(.close) {
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+    border-radius: 0 0 1.6rem 1.6rem;
+}
+.dots {
+    padding: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dots button {
+    padding: 0.3rem;
+    margin: 0.4rem;
+    border: none;
+    border-radius: 50%;
+    background-color: #F1F1F1;
+}
+.dots button:hover {
+    cursor: pointer;
+}
+.dots button:first-child {
+    background-color: #C7C7C7;
+
+}
+.information {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    padding-top: 0;
+}
+.price, .name, .add-to-cart {
+    font-size: var(--md);
+}
+.description {
+    font-size: var(--sm);
+    margin-top: 1.6rem;
+}
+.price {
+    font-weight: bold;
+    margin-bottom: 0.4rem;
+}
+.add-to-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 0.8rem;
+    background-color: var(--hospital-green);
+    padding: 1.6rem;
+    color: white;
+    margin: 2rem;
+}
+.add-to-cart img {
+    color: white;
+    margin-right: 0.8rem;
+}
+.close {
+    box-sizing: initial;
+    height: 2rem;
+    width: 2rem;
+    padding: 1rem;
+    position: absolute;
+    top: 1.6rem;
+    right: calc(30rem - 5.6rem);
+    background-color: white;
+    border-radius: 50%;
+    z-index: 2;
+    display: none;
+}
+
+
+
+@media (min-width: 600px) {
+    body {
+        display: flex;
+        width: 100vw;
+    }
+    aside {
+        width: 30rem;
+        box-shadow: rgba(0, 0, 0, 0.103) 0 0 5px 5px;
+    }
+    main {
+        width: calc(100vw - 30rem);
+    }
+   .close {
+       display: initial;
+   } 
+}
