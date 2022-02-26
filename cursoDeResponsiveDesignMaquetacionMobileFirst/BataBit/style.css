@@ -1,0 +1,85 @@
+/* Agregando estilos:
+
+1. Posicionamiento --> static, absolute, relative, fixed
+2. Modelo de caja (Box model) --> margin, border, padding, content
+3. Tipografía --> tipos, tamaños de fuente, etc
+4. Estilos visuales --> box-shadow, border-radius, gradient, etc
+5. Otros --> reglas CSS y más */
+:root {
+    --bitcoin-orange: #F7931A;
+    --soft-orange: #FFE9D5;
+    --warm-black: #282623;
+    --black: #201E1C;
+    --off-white: #FAF8F7;
+    --just-white: #FFF;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+}
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 295px;
+    text-align: center;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+}
+header img {
+    height: 24px;  
+}
+.header--title-container {
+    width: 90%;
+    min-width: calc(320px*0.9);
+    max-width: 900px;
+    align-self: center;
+    margin-top: 32px;
+}
+.header--title-container h1 {
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 26px;
+    color: var(--just-white);
+}
+.header--title-container>p {
+    margin-top: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 18px;
+    color: var(--soft-orange);
+}
+.header--button {
+    position: absolute;
+    top: calc(100% - 24px);
+    left: calc(50% - (229px * 0.5));
+    width: 229px;
+    height: 48px;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: var(--black);
+    text-decoration: none;
+    background-color: var(--off-white);
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border-radius: 4px;
+}
+.header--button span {
+    display: inline-block;
+    width: 12px;
+    height: 8px;
+    margin-left: 14px;
+    background-image: url("./assets/icons/arrow-down.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
