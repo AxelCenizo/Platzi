@@ -83,3 +83,182 @@ header img {
     background-repeat: no-repeat;
     background-size: cover;
 }
+main {
+    width: 100%;
+    height: auto;
+    background-color: var(--off-white);
+}
+.main-exchange-container, .main-broker-container {
+    width: 100%;
+    height: auto;
+    padding-top: 60px;
+    margin-bottom: 48px;
+    text-align: center;
+}
+.main-exchange-container--title, .main-broker-container--title {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.main-exchange-container .background-img, .main-broker-container .background-img {
+    width: 196px;
+    height: 196px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    display: inline-block;    
+    background-image: url("./assets/imgs/bitcoin.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main-exchange-container h2, .main-broker-container h2  {
+    margin-bottom: 24px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+.main-exchange-container--title p, .main-broker-container--title p  {
+    margin-bottom: 48px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #757575;
+}
+.main-currency-table, .main-broker-table {
+    width: fit-content;
+    min-width: calc(320px*0.6);
+    max-width: calc(320px*0.6*2.5);
+    /* height: 208px; */
+    margin: 0 auto;
+    font-family: "Inter", sans-serif;
+    text-align: left;
+}
+.main-currency-table .currency-table--title, .main-broker-table .broker-table--title {
+    margin: 12px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+    color: var(--bitcoin-orange);
+}
+.currency-table--table .table__left, .broker-table--table .table__left {
+    width: 100px;
+    padding: 10px 12px;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color: #B5B0AC;
+    background-color: var(--just-white);
+}
+.currency-table--table .table__right, .broker-table--table .table__right {
+    display: flex;
+    justify-content: flex-end;
+    width: 96px;
+    padding: 11px 12px;
+    padding-right: 0;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    color: #757575;
+    background-color: var(--just-white);
+}
+.broker-table--table .table__right {
+    display: block;
+    text-align: center;
+    padding: 11px 0;
+}
+.currency-table--table .trending-down,.currency-table--table .trending-up{
+    width: 12px;
+    height: 12px;
+    margin: 0 11px;
+    display: inline-block;
+    background-image: url("./assets/icons/trending-down.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.currency-table--table table.trending-up {
+    background-image: url("./assets/icons/trending-up.svg");
+}
+.main-tables-container table {
+    border-spacing: 1px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.main-product-detail {
+    width: 100%;
+    height: auto;
+    min-width: 320px;
+    padding: 64px 16px;
+    background-color: var(--black);
+}
+.product-detail--title {
+    width: 90%;
+    min-width: 288px;
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 44px;
+    text-align: center;
+}
+.product-detail--title h2 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+.product-detail--title p {
+    margin-top: 24px;
+    margin-bottom: 32px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #808080;
+}
+.product-detail--card {
+    width: 90%;
+    min-width: 288px;
+    max-width: 500px;
+    height: auto;
+    padding: 16px;
+    margin: 0 auto;
+    margin-top: 16px;
+    background-color: var(--warm-black);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+    border-radius: 4px;
+}
+.card-icon {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 10px;
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.clock {
+    background-image: url("./assets/icons/clock.svg");
+}
+.eye {
+    background-image: url("./assets/icons/eye.svg");
+}
+.dollar-sign {
+    background-image: url("./assets/icons/dollar-sign.svg");
+}
+.check-circle {
+    background-image: url("./assets/icons/check-circle.svg");
+}
+.product--card-title {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    color: var(--just-white);
+}
+.product--card-body {
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #808080;
+    padding-bottom: 8px;
+}
