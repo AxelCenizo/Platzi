@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 1.6rem;
+    font-family: "Roboto", monospace;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+header {
+    width: 100%;
+    height: 120px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.social-media {
+    width: 100%;
+    display: grid;
+    background-color: #47cfac;
+}
+.social-media .icons {
+    margin-right: 50px;
+    width: 270px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-self: flex-end;
+    justify-content: space-between;
+}
+.social-media .icons span {
+    color: white;
+}
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.nav-logo-container img {
+    height: 50px;
+    padding-left: 25px;
+}
+nav .profile-link-container {
+    margin-right: 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+nav .profile-link-container a {
+    color: black;
+    border-bottom: 1px solid black;
+}
+main {
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/img/Cover.png");
+    background-size: cover;
+    background-position: center;
+}
+main div {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 80px;
+    justify-items: center;
+}
+main h2 {
+    color: white;
+    grid-row-start: 2;
+    text-align: center;
+}
+main button {
+    height: 50px;
+    width: 100px;
+    grid-row-start: 3;
+    border: white 2px solid;
+    background-color: #47cfac;
+    font-weight: 1000;
+}

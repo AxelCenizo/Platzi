@@ -177,7 +177,7 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
 }
-.currency-table--table table.trending-up {
+.currency-table--table span.trending-up {
     background-image: url("./assets/icons/trending-up.svg");
 }
 .main-tables-container table {
@@ -262,3 +262,173 @@ main {
     color: #808080;
     padding-bottom: 8px;
 }
+.bitcoin-baby-container {
+    height: 387px;
+    width: 100%;
+    display: block;
+    background-image: url("assets/imgs/bitcoinbaby.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bitcoin-baby-container h2 {
+    padding-top: 96px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white); 
+    text-align: center;
+}
+.main-plans-container {
+    min-width: 320px;
+    width: 100%;
+    height: auto;
+    padding: 64px 0;
+    background: var(--off-white);
+}
+.plans-title {
+    width: 90%;
+    margin: 0 auto;
+}
+.plans-title h2 {
+    margin-bottom: 24px;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    text-align: center;
+    color: var(--black);
+}
+.plans-title p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #757575;
+    margin-bottom: 50px;
+}
+.plans-container--slider {
+    height: 300px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+.plans-container--card {
+    height: fit-content;
+    position: relative;
+    scroll-snap-align: center;
+    min-width: 190px;
+    padding-bottom: 24px;
+    margin: 0 4px;
+    text-align: center;
+    background-color: var(--just-white);
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+}
+.plans-container--card > p {
+    position: absolute;
+    left: calc(50% - 50px);
+    top: -16px;
+    width: fit-content;
+    padding: 8px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--just-white);
+    background: #F7931A;
+    border-radius: 8px;
+}
+.plans-container--card h3 {
+    margin-top: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+}
+.plans-container--card .price {
+    position: relative;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 52px;
+    line-height: 63px;
+    margin: 8px 0 16px;
+}
+.plans-container--card .price span {
+    position: absolute;
+    top: 4px;
+    left: calc(50% - 44px);
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: #363636;
+}
+.plans-container--card .saving { 
+    width: 80%;
+    margin: 0 auto;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #757575;
+    margin-bottom: 16px;
+}
+.plans-container--card button {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--black);
+    padding: 8px 16px;
+    padding-left: 12px;
+    background: #FAF8F7;
+    border: 2px solid #F7931A;
+    border-radius: 4px;
+}
+.plans-container--card button span {
+    background-image: url("assets/icons/arrow-right.svg");
+    margin: 0;
+    margin-left: 8px;
+}
+footer {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--bitcoin-orange);
+    color: var(--just-white);
+}
+footer section ul {
+    list-style: none;
+}
+footer section li {
+    padding: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+}
+footer .isotype {
+    display: flex;
+    flex-direction: column;
+}
+footer .isotype img {
+    width: 112px;
+    height: 48px;
+    margin-bottom: 7px;
+}
+footer .copyright {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 1.8rem;
+    text-align: center;
+}
+
+
