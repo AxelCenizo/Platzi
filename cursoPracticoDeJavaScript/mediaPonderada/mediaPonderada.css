@@ -1,0 +1,110 @@
+:root {
+    --rojo: #CE3B3E;
+    --azul-oscuro: #12203d;
+    --azul-claro: #33b1ff;
+    --azul:#24385b;
+    --negro-azulado: #0c1633;
+    --verde: #98ca3f;
+    --blanco: #eff3f8;
+    --gris-azulado: #637b9d;    
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    background-color: var(--azul-oscuro);
+    color: var(--blanco);
+    font-family: Roboto;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+header {
+    padding: 10px;
+    background-color: var(--azul-oscuro);
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 25%);
+}
+main {
+    width: 100%;
+}
+h1 {
+    margin: 2rem;
+    margin-block-start: 4rem;
+}
+h2 {
+    margin: 2rem;
+}
+button, input[type="number"] {
+    width: 250px;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 8px;
+    font-size: 1.6rem;
+}
+input[type="number"] {
+    background-color: var(--negro-azulado);
+    border: 1px solid var(--gris-azulado);
+    color: var(--gris-azulado);
+}
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+    display: none;
+    padding: 0;
+    margin: 0;
+}
+form {
+    margin-block-end: 2rem;
+}
+.contenedorTabla {
+    background-color: var(--negro-azulado);
+    padding: 2rem 8rem;
+    height: auto;
+}
+.contenedorTabla h2 {
+    margin: 0;
+    margin-block-end: 2rem;
+}
+#tablaDeElementos p span {
+    padding: 1rem;
+    background-color: var(--azul);
+    text-align: start;
+    border: 1px solid #0c1633;
+}
+#tablaDeElementos p {
+    margin-block-end: 0;
+    display: grid;
+    grid-template-columns: 1fr 5fr 5fr;
+}
+#tablaDeElementos {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+button {
+    background-color: var(--azul-claro);
+    border: none;
+    color: var(--negro-azulado);
+    font-weight: bold;
+}
+button:hover {
+    background-color: #74caff;
+    cursor: pointer;
+}
+
+
+#resultadoFinal {
+    display: inline-block;
+    font-size: 10rem;
+    text-align: center;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 16px;
+    background-color: var(--verde);
+    color: var(--blanco);
+}

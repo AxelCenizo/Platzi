@@ -1,0 +1,150 @@
+:root {
+    --rojo: #ff4842;
+    --azul-oscuro: #12203d;
+    --azul-claro: #33b1ff;
+    --azul:#24385b;
+    --negro-azulado: #0c1633;
+    --verde: #98ca3f;
+    --blanco: #eff3f8;
+    --gris-azulado: #637b9d;    
+    --width-scrollbar-vertical: 8px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    background-color: var(--azul-oscuro);
+    color: var(--blanco);
+    font-family: Roboto;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+header {
+    padding: 10px;
+    background-color: var(--azul-oscuro);
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 25%);
+}
+main {
+    width: 100%;
+    display: initial;
+    position: relative;
+}
+h1 {
+    margin: 2rem;
+    margin-block-start: 4rem;
+}
+h2 {
+    margin: 2rem;
+}
+button, input[type="number"] {
+    width: 300px;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 8px;
+    font-size: 1.6rem;
+}
+button:focus-visible {
+    background-color: #74caff;
+}
+input[type="number"] {
+    background-color: var(--negro-azulado);
+    border: 1px solid var(--gris-azulado);
+    color: var(--gris-azulado);
+    margin: 0;
+}
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+    display: none;
+    padding: 0;
+    margin: 0;
+}
+form {
+    margin-block-end: 2rem;
+}
+.contenedorTabla {
+    background-color: var(--negro-azulado);
+    /* padding: 0 calc(24rem - (var(--width-scrollbar-vertical))) 2rem 24rem;
+    padding: 2rem 24rem 2rem 24rem; */
+    max-height: 300px;
+    overflow-y: scroll;    
+    padding-bottom: 3rem;
+}
+.contenedorTabla h2 {
+    margin: 0;
+    padding-block-end: 2rem;
+    padding-block-start: 2rem;
+}
+#tablaDeElementos p span {
+    padding: 1rem;
+    background-color: var(--azul);
+    text-align: start;
+    border: 1px solid #0c1633;
+}
+#tablaDeElementos p span:first-child {
+    text-align: center;
+}
+#tablaDeElementos p {
+    max-width: 300px;
+    margin-block-end: 0;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    margin: 0 auto;
+}
+#tablaDeElementos {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+button {
+    background-color: var(--azul-claro);
+    border: none;
+    color: var(--negro-azulado);
+    font-weight: bold;
+}
+button:hover {
+    background-color: #74caff;
+    cursor: pointer;
+}
+
+
+#resultadoFinal {
+    display: inline-block;
+    font-size: 10rem;
+    text-align: center;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 16px;
+    background-color: var(--verde);
+    color: var(--blanco);
+}
+
+.fixed {
+    background-color: #0c1633;
+    position: sticky;
+    top: 0px;
+}
+
+::-webkit-scrollbar {
+    width: var(--width-scrollbar-vertical);
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--gris-azulado);
+    border-radius: 50px;
+}
+::-webkit-scrollbar-track {
+    background-color: #637b9d38;
+}
+#mensajeDeError {
+    display: none;
+    color: var(--rojo);
+    text-align: start;
+    margin: 1rem 0 0 1rem;
+}

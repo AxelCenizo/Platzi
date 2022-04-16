@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moda</title>
+    <link rel="stylesheet" href="moda.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Moda</h1>
+    <form id="formContainer">
+        <div class="error">
+            <input type="number" id="inputNota" placeholder="Valor">
+            <p id="mensajeDeError">Valor no puede estar vacío.</p>
+        </div>
+        <button type="button" id="buttonAgregar">Agregar elemento a la moda</button>
+    </form>
+    <main>
+        <div class="contenedorTabla">
+            <h2 class="fixed">Elementos agregados</h2>
+            <div id="tablaDeElementos"></div>
+        </div>
+        <div>
+            <h2>Resultado</h2>
+            <span id="resultadoFinal"></span>
+        </div>
+    </main>
+    <script src="moda.js"></script>
+</body>
+</html>

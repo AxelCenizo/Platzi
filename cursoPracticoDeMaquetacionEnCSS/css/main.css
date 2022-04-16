@@ -28,7 +28,7 @@ header {
 .social-media {
     width: 100%;
     display: grid;
-    background-color: #47cfac;
+    background-color: #48cfae;
 }
 .social-media .icons {
     margin-right: 50px;
@@ -81,8 +81,13 @@ main h2 {
 main button {
     height: 50px;
     width: 100px;
-    grid-row-start: 3;
     border: white 2px solid;
-    background-color: #47cfac;
+    background-color: #48cfae;
     font-weight: 1000;
+}
+main button:hover {
+    cursor: pointer;
+}
+main a {
+    grid-row-start: 3;
 }

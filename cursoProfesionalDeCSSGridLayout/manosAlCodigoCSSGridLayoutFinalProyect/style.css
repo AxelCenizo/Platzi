@@ -1,0 +1,70 @@
+:root {
+    --magenta: #FF007F;
+    --purple: #CB39A0;
+    --violet: #8E50A9;
+    --blue-violet: #53569B;
+    --blue: #2F537D;
+    --gray-blue: #2F4858;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #333;
+    display: grid;
+    place-content: center;
+}
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template: repeat(10, 1fr) / repeat(10, 1fr);
+    /* background: linear-gradient(to right, var(--violet), var(--purple)); */
+    background-color: #1a1a1a;
+    font-family: monospace;
+    font-size: 40px;
+    color: white;
+
+}
+.one {
+    grid-area: 5 / 1 / -2 / 2;
+    background-color: yellow;
+}
+.two {
+    grid-area: 7 / 1 / -3 / 4;
+    background-color: cyan;
+}
+.three--small {
+    grid-area: 3 / 3 / 4 / 4;
+    background-color: deeppink;
+}
+.three--big {
+    grid-area: 6 / 5 / -1 / -4;
+    background-color: deeppink;
+}
+.three--big {
+    grid-area: 6 / 5 / -1 / -4;
+    background-color: deeppink;
+}
+.three-just-border {
+    border: 2px solid deeppink;
+}
+.horizontal {
+    grid-area: 5 / 6 / span 3 / span 3;
+}
+.vertical {
+    grid-area: 3 / -2 / span 6 / -5;
+}
+h1 {
+    grid-area: 3 / 6 / span 2 / span 3;
+    justify-self: center;
+    align-self: center;
+}
+p {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    grid-area: 2 / 3 / span 2 / span 1;
+    align-self: start;
+}
