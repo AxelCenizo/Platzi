@@ -5,8 +5,8 @@
 # *.mp4
 # *.gif
 
-*.*
-!*.gitignore
-!*.html
-!*.css
-!*.js
+# *.*
+# !*.gitignore
+# !*.html
+# !*.css
+# !*.js
