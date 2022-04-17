@@ -1,0 +1,25 @@
+body {
+    text-align: center;
+    background-color: #273b47;
+    font-family: Verdana, sans-serif;
+    /* text-shadow: 3px 3px #19220a; */
+    color: #0791e6;
+}
+
+b {
+    color: #98CA3F;
+}
+
+canvas{
+    border: 5px solid #7e96a5;
+    background-color: white;
+}
+
+div {
+    margin: 30px;
+}
+
+input {
+    margin-left: 5px;
+    margin-right: 5px;
+}

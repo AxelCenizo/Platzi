@@ -1,0 +1,21 @@
+body {
+    text-align: center;
+    background-color: rgb(24, 24, 24);
+    font-family: Verdana, sans-serif;
+    color: white;
+}
+
+canvas{
+    border: 5px solid rgb(48, 48, 48);
+    background-color: white;
+}
+
+div {
+    margin: 30px;
+}
+
+input {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+

@@ -1,0 +1,53 @@
+/* #CE3B3E ROJO PLATZI*/
+
+body {
+    background-color: #121f3d;
+    color: #33b1ff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#error {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 0%;
+    border: 2px solid #ce3b3d79;
+}
+
+hr {
+    border: 1px solid #24385b;
+}
+
+.cajero {
+    position: sticky;
+    top: 0px;
+    background-color: #03091e;
+}
+
+
+.cajero img {
+    padding: 0px;
+    margin-top: 10px;
+}
+
+#saldo {
+    color: #98ca3f;
+}
+
+img {
+    padding: 1px 2px;
+}
+
+.input_estado {
+    padding-bottom: 5px;
+}
+
+label {
+    border: 15px, solid, rgb(0, 0, 0);
+}
+
+#resultado {
+    margin: 0% 12.5%;
+}

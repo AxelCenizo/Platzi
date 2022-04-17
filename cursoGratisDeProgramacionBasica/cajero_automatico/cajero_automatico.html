@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajero automático</title>
+    <link rel="stylesheet" href="cajero_automatico.css">
+</head>
+<body>
+    <div height="400px" class="cajero"><img src="atm.png" height="300px"><hr></div>
+    <div id="estado_billetes"></div>
+    <div>
+        <br>
+        Tu saldo es de: $ <b><span id="saldo"></span></b>
+        <br>
+        <br>
+        Seleccioná la catidad de dinero que querés extraer y haz clic en "Extraer". 
+        <br>
+        <br>
+    </div>
+    <div>
+        <div class="input_estado">
+            <label for="input_estado">Mostrar estado del cajero</label>
+            <input type="checkbox" id="input_estado">
+        </div>
+        <input type="number" id="input_numero">
+        <input type="button" value="Extraer" id="input_boton">
+        <br><br><hr><br>
+    </div>
+    <div id="resultado"></div>
+    <script src="cajero_automatico.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dibujo con JS</title>
+    <style>
+        body {
+            text-align:center;
+            font-family: sans-serif;
+            background-color: rgb(32, 32, 32);
+            color: white;
+        }
+
+        canvas {
+            border: 5px solid white;
+        }
+    </style>
+</head>
+<body>    
+    <h1>Dibujo con JS</h1>
+    <canvas width="500" height="500" id="dibujito" style="background-color: rgb(0, 0, 0); border: rgb(255, 0, 0), 5px, solid;"></canvas>
+    <script>
+        var d = document.getElementById("dibujito");
+        var lienzo = d.getContext("2d");
+        var numLineas = prompt("Número de líneas");
+        var colorcito = prompt("Color de las líneas");
+        var contador = 1;
+        var xinicial = 0;
+        var yinicial = 0;
+        var xfinal = 0;
+        var yfinal = 500;
+
+        while(contador<numLineas) {
+            yinicial = yinicial + 500 / numLineas;
+            xfinal = xfinal + 500 / numLineas;
+            dibujarLinea(colorcito, xinicial, yinicial, xfinal, yfinal), 1000;
+            contador = contador + 1;
+            console.log("Iteración " + yinicial);
+        }
+
+        contador = 1;
+        xinicial = 0;
+        yinicial = 500;
+        xfinal = 500;
+        yfinal = 500;
+
+        while(contador<numLineas) {
+            xinicial = xinicial + 500 / numLineas;
+            yfinal = yfinal - 500 / numLineas;
+            dibujarLinea(colorcito, xinicial, yinicial, xfinal, yfinal), 1000;
+            contador = contador + 1;
+            console.log("Iteración " + yinicial);
+        }
+
+        contador = 1;
+        xinicial = 500;
+        yinicial = 500;
+        xfinal = 500;
+        yfinal = 0;
+        
+        while(contador<numLineas) {
+            yinicial = yinicial - 500 / numLineas;
+            xfinal = xfinal - 500 / numLineas;
+            dibujarLinea(colorcito, xinicial, yinicial, xfinal, yfinal), 1000;
+            contador = contador + 1;
+            console.log("Iteración " + yinicial);
+        }
+
+        contador = 1;
+        xinicial = 500;
+        yinicial = 0;
+        xfinal = 0;
+        yfinal = 0;
+
+        while(contador<numLineas) {
+            xinicial = xinicial - 500 / numLineas;
+            yfinal = yfinal + 500 / numLineas;
+            dibujarLinea(colorcito, xinicial, yinicial, xfinal, yfinal), 1000;
+            contador = contador + 1;
+            console.log("Iteración " + yinicial);
+        }
+
+        function dibujarLinea(color, xi, yi, xf, yf) {
+            lienzo.beginPath();
+            lienzo.strokeStyle = color;
+            lienzo.moveTo(xi, yi);
+            lienzo.lineTo(xf, yf);
+            lienzo.stroke();
+            lienzo.closePath();
+        }
+            
+    </script>
+</body>
+</html>
