@@ -38,3 +38,43 @@ const obj1 = {nombre: nombre, edad: edad};
 // ES6
 const obj2 = {nombre, edad};
 console.log(obj1, obj2);
+
+// Generadores ES6
+
+function* counter() {
+    let count = 0;
+    while(count < 5) {
+        yield count++;
+    }    
+    return "DONE";
+}
+
+let contador = (veces) => {
+    let generador = counter();
+    for (i = 0; i <= veces; i++) {
+        console.log(generador.next());
+    }
+}
+
+contador(5);
+
+function* fibonacci() {
+    let x = 0;
+    let y = 1;
+    yield x;
+    yield y;
+    while(true) {
+        yield x += y;
+        yield y += x;
+    }
+}
+
+let fibona = (veces) => {
+    let generador = fibonacci();
+    for (i = 0; i < veces; i++) {
+        console.log(generador.next());
+    }
+    generador.return("finished")
+}
+
+fibona(20);
