@@ -62,7 +62,7 @@ red.addEventListener("click", processGame);
 green.addEventListener("click", processGame);
 
 //Estado del juego
-let gameIinitialized = false;
+let gameInitialized = false;
 let gameColorList = [];
 let buttonsPressed = [];
 let score = 0;
@@ -92,7 +92,7 @@ function blinkTheList() {
 }
 
 function startGame() {
-    gameIinitialized = true;
+    gameInitialized = true;
     gameColorList = [];
     buttonsPressed = [];
     blink("yellow", 500);
@@ -105,7 +105,7 @@ function startGame() {
 function processGame(event) {
     color = event.srcElement.id;
     console.log(color);
-    if (gameIinitialized) {
+    if (gameInitialized) {
         blink(color, defaultBlinkTime);
         buttonsPressed.push(color);
         sameListLength = buttonsPressed.length == gameColorList.length;
@@ -130,7 +130,7 @@ function addColor() {
 
 function gameOver() {
     score = gameColorList.length - 1;
-    gameIinitialized = false;
+    gameInitialized = false;
     alert(`
     Fin del juego
     Tu puntuación fue de: ${score}
