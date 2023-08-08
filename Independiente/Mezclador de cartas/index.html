@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mezclador de Cartas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Mezclador de Cartas</h1>
+    <label for="numCartas">Cantidad de cartas:</label>
+    <div>
+        <input type="number" id="numCartas" min="1" step="1" required>
+    </div>
+    <button onclick="mezclarCartas()">Mezclar</button>    
+    <div id="resultado"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

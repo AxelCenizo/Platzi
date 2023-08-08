@@ -1,0 +1,67 @@
+html {
+    font-size: 62.5%;
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Cambia la fuente a Arial o cualquier otra fuente deseada */
+    font-size: 2.0rem; /* Agrandar la letra */
+    text-align: center; /* Centrar el contenido */
+    background-color: #333; /* Cambia el color de fondo a tu preferencia */
+    margin: 0;
+    padding: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajusta la altura de la página para centrar verticalmente */
+}
+  
+.container {
+    text-align: center; /* Centrar el contenido */
+    padding: 2.0rem;
+  }
+
+  h1 {
+    font-size: 2.4rem; /* Agrandar el tamaño del título si es necesario */
+  }
+  
+  button {
+    padding: 1.6rem 2.0rem;
+    font-size: 1.6rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.4rem;
+    margin: 2rem;
+    width: 16rem;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  input[type="number"] {
+    height: 4.0rem; /* Ajusta la altura para que coincida con el botón */
+    width: 8rem;
+    font-size: 1.6rem;
+    border: none; /* Quita el borde */
+    padding: 0.5rem; /* Añade un poco de espacio interno para que no esté pegado al texto */
+    border-radius: 0.4rem;
+    text-align: center;
+    margin: 1rem;
+  }
+
+  input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+  #resultado {
+    padding: 2.0rem 0rem;
+  }
+  
